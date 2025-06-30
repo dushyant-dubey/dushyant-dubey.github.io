@@ -1,22 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Dushyant Dubey - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Consolas, monospace;
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .header {
+      font-size: 4em;
+      color: blue;
+      font-weight: bold;
+      margin-top: 60px;
+    }
+
+    .top-left {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 80px;
+    }
+
+    .top-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      border-radius: 8px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .image-row img {
+      width: 250px;
+      border-radius: 6px;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 1em;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
+  <img src="image2.png" alt="IIT Delhi Logo" class="top-left">
+  <img src="image1.jpeg" alt="Profile Picture" class="top-right">
+
   <div class="container">
-    <h1 style="color: blue; font-size: 3em;">DUSHYANT DUBEY</h1>
-    <img src="image2.png" class="top-left" alt="IIT Delhi Logo">
-    <img src="image1.jpeg" class="top-right" alt="Profile Picture">
-    <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px; margin-bottom: 30px;"> 
-      <img src="image1.jpeg" alt="Image 1" width="250">
-      <img src="image3.jpeg" alt="Image 3" width="250">
-      <img src="image4.jpeg" alt="Image 4" width="250">
+    <div class="header">DUSHYANT DUBEY</div>
+
+    <div class="image-row">
+      <img src="image1.jpeg" alt="Image 1">
+      <img src="image3.jpeg" alt="Image 3">
+      <img src="image4.jpeg" alt="Image 4">
     </div>
-    <p style="text-align: justify;">I am a PhD Research Scholar at the Indian Institute of Technology Delhi, working in the interdisciplinary domain of Additive Manufacturing and Fiber-reinforced Composites. I have been studying at IIT Delhi since August 2021. I have expertise in X-ray micro computed tomography (microCT), scanning electron microscopy (SEM), and mechanical characterization.<br><br>
-    I am also learning to work with machine learning algorithms to develop predictive models for estimating the mechanical properties of printed composites. Unlike traditional approaches, I aim to implement advanced deep learning techniques (such as convolutional neural networks and recurrent architectures) that can process image-based data from microCT or SEM to directly predict material performance. This addresses the research gap of correlating internal microstructural features with composite properties using spatially-aware learning methods, which is currently underexplored in 3D printed fiber-reinforced composites.
+
+    <p>
+      I am a PhD Research Scholar at the Indian Institute of Technology Delhi, working in the interdisciplinary domain of Additive Manufacturing and Fiber-reinforced Composites. I have been studying at IIT Delhi since August 2021. I have expertise in X-ray micro computed tomography (microCT), scanning electron microscopy (SEM), and mechanical characterization.<br><br>
+      I am also learning to work with machine learning algorithms to develop predictive models for estimating the mechanical properties of printed composites. Unlike traditional approaches, I aim to implement advanced deep learning techniques (such as convolutional neural networks and recurrent architectures) that can process image-based data from microCT or SEM to directly predict material performance. This addresses the research gap of correlating internal microstructural features with composite properties using spatially-aware learning methods, which is currently underexplored in 3D printed fiber-reinforced composites.
     </p>
   </div>
 </body>
